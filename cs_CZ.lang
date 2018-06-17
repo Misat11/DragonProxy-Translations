@@ -1,40 +1,48 @@
 # =================================
-#| DragonProxy konfigurace  |
-#|    Sponzorovano BytePowered     |
+#|    DragonProxy  konfigurace     |
+#|    Sponzorováno BytePowered     |
 # =================================
 project_name=DragonProxy
-init_loading=Zapinam [PROJNAME], verze: %s ...
-init_mc_pc_support=Posporovana verze Minecraft Java edice: %s
-init_mc_pe_support=Podporovana verze Minecraft Bedrock edice: %s
-init_creating_thread_pool=Vytvarim thread pool(Velikost:%s)...
-init_binding=Hledam pripojeni na %s:%s ...
-init_done=Proxy je spusteno!
-command_not_found=\u00a7cPrikaz nebyl nalezen!
-message_client_connected=Hrac %s[%s] se pripojil!
-message_online_notice=\u00b7------------------------\n\u00b7*     Minecraft Login     *\n\u00b7Powered by DragonProxy! \n\u00b7http://dragonet.org/proxy\n\u00b7\n\u00b7Logging in as [%s]. \n\u00b7------------------------
-message_online_email=\u00b7Prosim zadej email sveho Mojang uctu do chatu:
-message_online_error=\u00a7cYour details were wrong. Please rejoin.
-message_online_password=\u00b7Prosim zadej sve heslo:
-message_online_logging_in=\u00b7Probiha prihlasovani pres Mojang AB, prosim pockej...
-message_online_login_success=\u00a7aPrihlaseni bylo uspesne! Probiha pripojovani k serveru...
-message_online_login_success_console=Hrac %s[%s] se prihlasil  pres Minecraft ucet.
-message_online_username=Tvuj nick byl zmenen na %s stejne jako tvuj Minecraft ucet.
-message_online_login_faild=\u00a7cPrihlaseni se nezdarilo. Prosim pripoj se znova.
-message_remote_connected=Propojeni navazano pro hrace %s[%s]!
-message_teleport_to_spawn=\u00a7aTeleportuji te na server spawn pozici... \n\u00a7cMozna se zaseknes ve vzduchu. Zkus se pripojit znova pokud problem nezmizi do 15 sekund.
-message_remote_connect_failure=Nepodarilo se pripojit na Minecraft Java edition server!
-message_remote_is_online=Servery s online modem nejsou podporovane!
-message_remote_error=Chyba v síti vzdaleneho serveru!
-message_joined=Hrac %s[%s] se pripojil ke vzdalenemu serveru!
-message_kicked=Hrac %s[%s] byl vykopnut kvuli: %s
-message_remote_disconnected=Vzdaleny server se odpojil!
+init_loading=Načítám [PROJNAME], verze: %s ...
+init_mc_pc_support=Podporovaná verze Minecraftu: Java Edition: %s
+init_mc_pe_support=Podporovaná verze Minecraftu: Bedrock Edition: %s
+init_creating_thread_pool=Vytvářím thread pool(Velikost:%s)...
+init_binding=Hledám připojení na %s:%s ...
+init_done=Proxy je spuštěna!
+command_not_found=\u00a7cPříkaz nebyl nalezen!
+message_client_connected=Hráč %s[%s] se připojil!
+message_login_prompt=\u00a7e==== \u00a7bPřihlášení na \u00a74Minecraft \u00a7e====\n\
+\u00a7fpowered by DragonProxy\n\
+\u00a7aPohni se pro přihlášení.
+message_login_progress=\u00a76přihlašování...
+form_login_title=\u00a71\u00a7lPřihlášení do \u00a74\u00a7lMinecraft \u00a71\u00a7lÚčtu
+form_login_desc=DragonProxy umožňuje Bedrock/PE klientům připojit se na Minecraft: Java Edition servery.
+form_login_prompt=\u00a7aZadej svůj Minecraft: Java Edition účet pro přihlášení.
+form_login_username=\u00a7bJméno/Email:
+form_login_password=\u00a7bHeslo:
+message_online_error=\u00a7cTvoje údaje jsou chybné. Prosím připoj se do hry znovu.
+message_online_password=\u00b7Prosím zadej své heslo:
+message_online_logging_in=\u00b7Probíhá přihlašování přes Mojang AB, prosím čekej...
+message_online_login_success=\u00a7aPřihlášení bylo úspěšné! Probíhá připojování k serveru...
+message_online_login_success_console=Hráč %s[%s] se přihlásil přes Minecraft účet.
+message_online_username=Tvůj nick byl změněn na %s stejně jako tvůj Minecraft účet.
+message_online_login_faild=\u00a7cPřihlášení se nezdařilo. Prosím připoj se znova.
+message_remote_connected=Propojení navázano pro hráče %s[%s]!
+message_teleport_to_spawn=\u00a7aTeleportuji tě na spawn pozici serveru... \n\u00a7cMožná se zasekneš ve vzduchu. Zkus se připojit znova pokud problém nezmizí do 15 sekund.
+message_remote_connect_failure=Nepodařilo se připojit na Minecraft Java edition server!
+message_remote_is_online=Servery s online modem nejsou podporovány!
+message_remote_error=Chyba v síti vzdáleného serveru!
+message_joined=Hrac %s[%s] se připojil ke vzdálenému serveru!
+message_kicked=Hrac %s[%s] byl vyhozen kvůli: %s
+message_remote_disconnected=Vzdálený server se odpojil!
 message_client_disconnect=Klient byl odpojen.
-message_unsupported_client=Nepodporovany klient!
-client_disconnected=Klient %s[%s] byl odpojen! Duvod: %s
-shutting_down=Vypinam [PROJNAME]...
-query_failed=Nepodarilo se pripojit na %ip%:%port%!
-message_cls_notice=Dragonet CLS system je zapnuty. \n\u00a7eMuzes se prihlasit na \u00a7ahttp://auth.dragonet.org &ea postupovat podle instrukci.
-message_server_error=\u00a7cServeru se nepodarilo te pripojit kvuli tamejsi chybe! \n\u00a7cProsim zkus se pripojit znova pozdeji... :( \n\u00a70.\n\u00a7cDuvod: %s
-error_cls_unreachable=Nepodarilo se pripojit k CLS HTTP API
-error_cls_error=CLS System odeslal necekanou odpoved. Prosim zkus to znova.
-error_cls_login=Nepodarilo se pripojit s tvym prihlasovacim klicem, zkus se znova prihlasit pres CLS?
+message_unsupported_client=Nepodporovaný klient!
+client_disconnected=Klient %s[%s] byl odpojen! Důvod: %s
+shutting_down=Zastavuji [PROJNAME]...
+query_failed=Nepodařilo se připojit na %ip%:%port%!
+message_cls_notice=Dragonet CLS systém je zapnutý. \n\u00a7eMůžeš se přihlásit na \u00a7ahttp://auth.dragonet.org &ea postupovat podle instrukcí.
+message_server_error=\u00a7cServeru se nepodařilo tě připojit kvůli tamější chybě! \n\u00a7cProsím zkus se připojit znovu později... :( \n\u00a70.\n\u00a7cDůvod: %s
+error_cls_unreachable=Nepodařilo se připojit k CLS HTTP API
+error_cls_error=CLS Systém odeslal nečekanou odpověd. Prosím zkus to znova.
+error_cls_login=Nepodařilo se připojit s tvým přihlašovacím klíčem, zkus se znova přihlásit přes CLS?
+error_bad_login_packet=Neplatná relace (zkus restarovat svojí hru)
